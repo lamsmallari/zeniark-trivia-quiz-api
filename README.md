@@ -10,7 +10,7 @@ Here's an example query for getting the first 10 items ordered by _order_ proper
     .doc("exampleSetIdString")
     .collection("questions")
     .orderBy("order")
-    .limit(Number(req.params.limit) || 10);
+    .limit(10);
 
 Source: https://firebase.google.com/docs/firestore/query-data/get-data
 
