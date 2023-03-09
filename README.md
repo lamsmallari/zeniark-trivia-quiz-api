@@ -1,11 +1,8 @@
 # Zeniark Trivia Quiz API - Solution
 
-I've modified the structure of the mock data a bit to integrate in Firestore collections approach. But we can still use the original data structure when we upload it. See the page _data-debug_ from my front-end repository how I transformed it.
+I've modified the structure of the mock data a bit to integrate in Firestore collections approach. But we can still use the original data structure when we upload it. See the page _data-debug_ from my [front-end repository](https://github.com/lamsmallari/zeniark-trivia-quiz-app) how I transformed it and upload it to Firestore with the POST route.
 
-Here's a quick look of the database:
-![Firestore](https://firebasestorage.googleapis.com/v0/b/kuwago-1f395.appspot.com/o/public/firestore.png?alt=media&token=dc6061d7-3102-47da-ab3c-25266689f571)
-
-Here's an example query of getting first 10 items ordered by _order_ property using Firestore SDK:
+Here's an example query for getting the first 10 items ordered by _order_ property using Firestore SDK:
 
     const questionsRef = db
     .firestore()
